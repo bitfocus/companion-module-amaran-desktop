@@ -1,0 +1,32 @@
+{
+  "name": "companion-module-amaran",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "format": "prettier -w .",
+    "package": "companion-module-build"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/bitfocus/companion-module-amaran",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfocus/companion-module-amaran.git"
+  },
+  "keywords": [
+    "bitfocus",
+    "companion",
+    "amaran",
+    "aputure",
+    "lighting"
+  ],
+  "dependencies": {
+		"@companion-module/base": "~1.14.1",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^2.5.0",
+		"prettier": "^3.7.4"
+	},
+  "prettier": "@companion-module/tools/.prettierrc.json"
+}

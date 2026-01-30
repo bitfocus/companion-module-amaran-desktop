@@ -1,0 +1,26 @@
+{
+  "id": "amaran",
+  "name": "Amaran Desktop",
+  "shortname": "amaran",
+  "description": "Control Aputure Amaran lights via Amaran Desktop",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "git+https://github.com/bitfocus/companion-module-amaran-desktop.git",
+  "bugs": "https://github.com/bitfocus/companion-module-amaran-desktop/issues",
+  "maintainers": [
+    {
+      "name": "Matthew Purcell",
+      "email": "mindtheapp@gmail.com"
+    }
+  ],
+  "legacyIds": [],
+  "manufacturer": "Aputure",
+  "products": ["Amaran Lights"],
+  "keywords": ["amaran", "aputure", "lighting"],
+  "runtime": {
+    "type": "node18",
+    "api": "nodejs-ipc",
+    "apiVersion": "0.0.0",
+    "entrypoint": "../src/main.js"
+  }
+}
