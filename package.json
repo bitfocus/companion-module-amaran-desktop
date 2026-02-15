@@ -1,6 +1,6 @@
 {
   "name": "companion-module-amaran",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
   "main": "src/main.js",
   "scripts": {
