@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@companion-module/base@~1.14.1":
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/@companion-module/base/-/base-1.14.1.tgz#9a7b4299ae7541a107b9fd83e3f2af66d5f4e146"
-  integrity sha512-m6Gp1r8IJxh89zOB7jhVDdd4evmrNjuCsBDckEI0Nb/yP19gy18Wx1vRlyZFJshIhEMLgmNC1yqdwDgb+wYspw==
+"@companion-module/base@~1.13.0":
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/@companion-module/base/-/base-1.13.6.tgz#3b6634d0e7f8a2b0dd3f6fddf855e4fd319dcdd8"
+  integrity sha512-Zpb1JLWgYTGmDtw5HB6cc6Q7ofhNy+aPZOdAdV8EP8zZ47CXuRA408rlz/uCa71gmxId+DhZfVveFVhTSm5FDw==
   dependencies:
     ajv "^8.17.1"
     colord "^2.9.3"
@@ -979,9 +979,9 @@ tapable@^2.3.0:
   integrity sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==
 
 tar@^7.5.7:
-  version "7.5.7"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.7.tgz#adf99774008ba1c89819f15dbd6019c630539405"
-  integrity sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==
+  version "7.5.9"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.9.tgz#817ac12a54bc4362c51340875b8985d7dc9724b8"
+  integrity sha512-BTLcK0xsDh2+PUe9F6c2TlRp4zOOBMTkoQHQIWSIzI0R7KG46uEwq4OPk2W7bZcprBMsuaeFsqwYr7pjh6CuHg==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"
