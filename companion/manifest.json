@@ -3,7 +3,7 @@
   "name": "Amaran Desktop",
   "shortname": "amaran",
   "description": "Control Aputure Amaran lights via Amaran Desktop",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "MIT",
   "repository": "git+https://github.com/bitfocus/companion-module-amaran-desktop.git",
   "bugs": "https://github.com/bitfocus/companion-module-amaran-desktop/issues",
