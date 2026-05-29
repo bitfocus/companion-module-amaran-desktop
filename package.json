@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "@companion-module/base": "~1.13.0",
-    "ws": "^8.18.0"
+    "ws": "^8.20.1"
   },
   "devDependencies": {
     "@companion-module/tools": "^2.5.0",
