@@ -3,6 +3,7 @@ import { getActions } from './actions.js'
 import { getFeedbacks } from './feedbacks.js'
 import { getPresets } from './presets.js'
 import { AmaranConnection } from './connection.js'
+import { getDeviceVariablePrefix, getDeviceVariableValues } from './variables.js'
 
 class AmaranInstance extends InstanceBase {
 	constructor(internal) {
@@ -33,7 +34,13 @@ class AmaranInstance extends InstanceBase {
 			this.updateStatus(InstanceStatus.ConnectionFailure)
 		})
 		this.connection.on('deviceState', (nodeId, state) => {
-			this.deviceStates.set(nodeId, { ...this.deviceStates.get(nodeId), ...state })
+			const updatedState = { ...this.deviceStates.get(nodeId), ...state }
+			this.deviceStates.set(nodeId, updatedState)
+
+			const device = this.devices.find((candidate) => candidate.node_id === nodeId)
+			if (device) {
+				this.setVariableValues(getDeviceVariableValues(device, updatedState))
+			}
 			this.checkFeedbacks()
 		})
 		
@@ -162,7 +169,7 @@ class AmaranInstance extends InstanceBase {
 		const variables = []
 		
 		for (const device of this.devices) {
-			const safeName = device.name?.replace(/[^a-zA-Z0-9]/g, '_') || device.node_id
+			const safeName = getDeviceVariablePrefix(device)
 			variables.push(
 				{ variableId: `${safeName}_power`, name: `${device.name} Power` },
 				{ variableId: `${safeName}_intensity`, name: `${device.name} Intensity` },

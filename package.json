@@ -4,6 +4,7 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
+    "test": "node --test test/*.test.js",
     "format": "prettier -w .",
     "package": "companion-module-build"
   },
