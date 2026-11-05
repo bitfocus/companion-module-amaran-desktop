@@ -21,11 +21,11 @@
     "lighting"
   ],
   "dependencies": {
-    "@companion-module/base": "~1.13.0",
+    "@companion-module/base": "~1.15.1",
     "ws": "^8.21.0"
   },
   "devDependencies": {
-    "@companion-module/tools": "^2.8.0",
+    "@companion-module/tools": "^2.9.0",
     "eslint": "^9.36.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3"
